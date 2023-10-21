@@ -10,8 +10,6 @@
     <title>Gutim.GYM</title>
      <!-- css -->
      <link rel="stylesheet" href="style.css">
-    <!-- js -->
-    <script src="script.js"></script>
      <!-- fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,27 +19,31 @@
      <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@100&family=Ruda&display=swap" rel="stylesheet">
      
 </head>
-<body>
+<body id="home">
      <!-- header -->
+  
      <header>
+
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
-                    
                         <img src="imgs/logo.png" alt="gym Logo" width="100">
                     </a>
                 </div>
-                </div>
-                <nav class="navigation">
+            </div>
+                <nav class="navigation" id="nav">
                     <!-- <div class="close-menu"><i class="bx bx-x"></i></div> -->
                     <ul class="nav-links">
                         <li class="nav-link"><a href="index.html" class="active">home</a></li>
-                        <li class="nav-link"><a href="prgrams.html">Fitness programs</a></li>
+                        <li class="nav-link"><a href="programs.html">Fitness programs</a></li>
                         <button><a href="signup.html">Sign up</a></button>
+                    
                        
                     </ul>
                 </nav>
-            </div>
+                <img src="imgs/Bulleted List.png" id="list">
+            
+        </div>
        
     </header>
       <!-- home section -->
@@ -52,16 +54,20 @@
                 <div class="home-wrapper">
                     <h2>WORK HARDER, GET STRONGER</h2>
                     <h1>EASY WITH OUR GYM</h1>
-                    <button><a href="signup.html"></a>BECOME MEMBER</button>
+                   
+                    <button><a href="signup.html">BECOME MEMBER</a></button>
                 </div>
             </div>
         </div>
+   
     </section>
+
     <!-- programs section -->
     <section class="programs">
         <div class="title">
-            <h2>OUR PROGRAM</h2>
+            <h2>OUR PROGRAMS</h2>
         </div>
+        <div class="pograms-grid">
         <div class="grid1">
             <div class="div1">
             <div class="div1-img">
@@ -82,7 +88,7 @@
 
             </div>
             <div class="div1-text">
-            <h3>Bodybuilding</h3>
+            <h3>Fitness</h3>
             <p>Please do not re-distribute this template ZIP file on any template collection website. 
                 This is not allowed.</p>
             </div>
@@ -95,7 +101,7 @@
 
             </div>
             <div class="div1-text">
-            <h3>Bodybuilding</h3>
+            <h3>Pilates</h3>
             <p>Please do not re-distribute this template ZIP file on any template collection website. 
                 This is not allowed.</p>
             </div>
@@ -108,7 +114,7 @@
 
             </div>
             <div class="div1-text">
-            <h3>Bodybuilding</h3>
+            <h3>Wheight Lifting</h3>
             <p>Please do not re-distribute this template ZIP file on any template collection website. 
                 This is not allowed.</p>
             </div>
@@ -121,7 +127,7 @@
 
             </div>
             <div class="div1-text">
-            <h3>Bodybuilding</h3>
+            <h3>Nutrition</h3>
             <p>Please do not re-distribute this template ZIP file on any template collection website. 
                 This is not allowed.</p>
             </div>
@@ -134,20 +140,22 @@
 
             </div>
             <div class="div1-text">
-            <h3>Bodybuilding</h3>
+            <h3>Aerobics</h3>
             <p>Please do not re-distribute this template ZIP file on any template collection website. 
                 This is not allowed.</p>
             </div>
             
         </div>
         </div>
-     
+    </div>
     </section>
      <!-- sotries section -->
      <section class="container-stories">
         <div class="title-stories">
             <h2>OUR PROGRAM</h2>
         </div>
+        <div class="sotries-grid">
+       
         <div class="com1">
             <div class="c1">
                 <img src="imgs/Ellipse 4.png">
@@ -180,27 +188,63 @@
             </div>
 </div> 
         </div>
+    </div>
   </section>
    <!-- FAQ section -->
    <section class="faq">
     <h2>Frequently asked questions</h2>
+    <div class="faq-grid">
     <div class="faq-ques">
         <div class="faq-flex">
+            <div class="check">
          <div class="q1">
         <p>What are the gym's hours of operation?</p>
+        <div class="img-check">
+        <img src="imgs/icons/Done.png">
+          <!-- reponse-faq -->
+  </div>
     </div>
+    <div class="answer">
+        <p>Assurez-vous d'adapter ces programmes en fonction des besoins et des équipements spécifiques Please do not re-distribute this template ZIP file on any template collection website. 
+         This is not allowed.
+        </p>
+     </div>
+</div>
+<div class="check">
     <div class="q1">
         <p>What are the gym's hours of operation?</p>
+        <div class="img-check">
+        <img src="imgs/icons/Done.png">
+        </div>
     </div>
+    <div class="answer ">
+        <p>Assurez-vous d'adapter ces programmes en fonction des besoins et des équipements spécifiques Please do not re-distribute this template ZIP file on any template collection website. 
+         This is not allowed.
+        </p>
+     </div>
+     </div>
+     <div class="check">
     <div class="q1">
         <p>Do you offer personal training sessions?        </p>
+        <div class="img-check">
+        <img src="imgs/icons/Done.png">
+        </div>
     </div>
-    </div>
+    <div class="answer">
+        <p>Assurez-vous d'adapter ces programmes en fonction des besoins et des équipements spécifiques Please do not re-distribute this template ZIP file on any template collection website. 
+         This is not allowed.
+        </p>
+     </div>
+     </div>
 </div>
    
-
+</div>
+    </div>
 
    </section>
+ 
+   
+     <!-- FOOTER section -->
    <footer>
     <div class="phone">
        <h6>Phone</h6>
@@ -218,14 +262,16 @@
         <img src="imgs/footer-signup.jpg">
      </div>
      <div class="foot-footer">
+        <div class="container-footer">
      <div class="copyright">
         <p>Copyright ©2023 All rights reserved | Night Crawlers</p>
      </div>
      <div class="icons">
         <img src="imgs/icons/Facebook.png">
-        <img src="imgs/icons/Instagram.png">
+        <img class="insta" src="imgs/icons/Instagram.png">
         <img src="imgs/icons/TwitterX.png">
 
+        </div>
         </div>
        </div> 
         
@@ -233,6 +279,7 @@
 
 
    </footer>
-
+   <!-- js -->
+   <script src="script.js"></script>
 </body>
 </html>
