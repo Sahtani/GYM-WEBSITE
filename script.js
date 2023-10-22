@@ -1,14 +1,27 @@
 // BUREDER MENU
-let menu = document.getElementById("nav");
-let list=document.getElementById("list");
-console.log(list);
-list.onclick=function(){
-    if(menu.style.display === "block") {
-        menu.style.display="none";
-    }else {
-        menu.style.display="block";
-    }
-}
+// let menu = document.getElementById("nav");
+// let list=document.getElementById("list");
+// console.log(list);
+// list.onclick=function(){
+//     if(menu.style.display === "block") {
+//         menu.style.display="none";
+//     }else {
+//         menu.style.display="block";
+//     }
+// }
+const hamburger = document.querySelector("#list");
+const navMenu = document.querySelector(".nav-links");
+
+
+// hamburger navigation
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
 
 
 // FAQ ANSWER

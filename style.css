@@ -72,6 +72,8 @@ header {
 
 #list {
   display: none;
+  width: 100px;
+  height: 20px;
 }
 .home {
   display: flex;
@@ -114,7 +116,7 @@ header {
 
 .programs {
   background-color: white;
-  height: 80vh;
+ max-height: 70vh;
 }
 .pograms-grid {
   display: grid;
@@ -122,7 +124,7 @@ header {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .programs .title {
-  color: var(--back-color);
+  color: black;
   font-family: var(--font--family);
   font-size: 2em;
 
@@ -135,10 +137,9 @@ header {
   justify-content: flex-start;
   gap: 20px;
   padding-left: 10px;
-  letter-spacing: normal !important;
+  letter-spacing: normal;
 }
-.programs .div1-img {
-}
+
 .div1-text h3 {
   font-size: 2.5em;
 }
@@ -150,7 +151,7 @@ header {
 
 .container-stories {
   overflow-x: hidden;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(imgs/Rectangle\ 8.png);
 }
 .sotries-grid {
@@ -178,7 +179,7 @@ header {
   height: 20%;
 }
 .first-com {
-  height: 50%;
+  /* height: 50%; */
   background-color: var(---bg--color);
   border-radius: 10px;
   border: 1px solid transparent;
@@ -201,16 +202,16 @@ header {
   grid-column: 2;
 }
 
-.c2 img {
-  width: 20%;
-  height: 20%;
+.c1 img {
+  width: 15%;
+  height: 15%;
 }
 
 /*faq/////////////////////////////////////////////*/
 
 .faq {
   background-color: white;
-  height: 70vh;
+  min-height: 70vh;
 }
 .faq-grid {
   display: grid;
@@ -228,7 +229,7 @@ header {
   border: 1px solid transparent;
   border-radius: 10px;
   margin: 40px 40px 40px;
-  height: 40vh;
+  min-height: 50vh;
 }
 .faq-flex {
   display: flex;
@@ -246,9 +247,8 @@ header {
   font-family: var(--font--family1);
   font-weight: bold;
   font-size: 2em;
-  height: 50px;
+  height: 60px;
   padding: 10px;
-
   margin-bottom: 40px;
   display: flex;
   align-items: center;
@@ -256,23 +256,18 @@ header {
 }
 /* answer-faq */
 
-.answer{
- display: none;
- 
- 
+.answer {
+  display: none;
 }
 .answer p {
-  
   font-size: 2em;
-  background-color:var(--text-color);
+  background-color: var(--text-color);
   font-family: var(--font--family);
   padding: 10px;
-  
 }
- .active {
+.active {
   max-height: 300px;
   display: block;
-
 }
 
 /*FOOTER/////////////////////////////////*/
@@ -283,7 +278,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30% 40% 30%;
 
-  height: 40vh;
+  min-height: 40vh;
   padding-left: 60px;
 }
 
@@ -366,24 +361,23 @@ footer p {
 
 .our-programs {
   background-color: white;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
-.our-programs-grid{
+.our-programs-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:  45% 45% 10%;
-  gap: 40px;
-
+  grid-template-rows: 45% 45% 10%;
+  gap: 20px;
 }
 .our-programs h1 {
   color: black;
   font-family: var(--font--family);
   font-size: 4em;
   text-align: center;
- margin-top: 20px;
- margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.our-programs h1 span {
+span {
   color: var(--back-color);
   padding-left: 5px;
 }
@@ -416,13 +410,12 @@ footer p {
 /*------------------------------------------PLAN-------------*/
 
 .plan {
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
-  
 }
-.plan-grid{
+.plan-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .plan h1 {
   color: var(--back-color);
@@ -447,20 +440,16 @@ footer p {
 .first-plan:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
-  /* background-color: white; */
 }
 
 .plan-grid1 {
   grid-column: 1;
- 
 }
 .plan-grid2 {
   grid-column: 2;
-  
 }
 .plan-grid3 {
   grid-column: 3;
- 
 }
 .first-plan h1 {
   margin-bottom: 5px;
@@ -490,15 +479,13 @@ footer p {
 .card button {
   border: 1px solid transparent;
   background-color: #282626;
-/* display: flex; */
+  /* display: flex; */
   width: 80%;
   height: 70px;
   font-size: 2.5em;
   font-family: var(--font--family);
   margin-left: 40px;
   margin-bottom: 20px;
-  
-
 }
 .card button a {
   color: white;
@@ -556,20 +543,18 @@ form {
 .rejex h3 {
   font-size: 3em;
   font-family: var(--font--family);
-  color: white;
+  color:var(--black--color);
   text-align: center;
   margin-top: 70px;
   margin-bottom: 20px;
 }
-.rejex button{
-   cursor: pointer;
+.rejex button {
+  cursor: pointer;
 }
-input:focus{
-
-    border: 0px solid white;
-  
-} 
-#result{
+input:focus {
+  border: 0px solid white;
+}
+#result {
   display: none;
   background-color: white;
   color: black;
@@ -583,7 +568,7 @@ input:focus{
 }
 .img img {
   border-radius: 40px;
-  width: %;
+  width: 80%;
   height: 80vh;
   margin-top: 80px;
 }
@@ -603,31 +588,165 @@ input:focus{
     overflow-x: hidden;
   }
 
-  .container {
-    position: relative;
-  }
-  .navigation {
+  .nav-links.active {
     position: absolute;
     background-color: #aaa;
-    display: none;
-    width: 150px;
-    height: 100px;
+    display: block;
+    width: 300px;
+    height: 200px;
     top: 60px;
-    right: 3px;
+    right: 10px;
     padding: 1rem;
     border: 1px solid transparent;
     border-radius: 10px;
   }
-  .navigation ul li {
+
+  .navigation .nav-links a {
     color: black;
+    font-size: 1em;
   }
+  .navigation .nav-links button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .logo {
+    width: 1000px;
+    height: 40px;
+  }
+
   #list {
     display: block;
+    cursor: pointer;
+  
   }
-  .programs {
-    display: flex;
-    flex-flow: column wrap;
-  }
-}
 
-/*grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));*/
+  /* index-media */
+  .pograms-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .pograms-grid img {
+    width: 40px;
+    height: 40px;
+  }
+  .programs .div1 {
+  gap:0px
+  }
+  .div1-text h3 {
+    font-size: 2em;
+  }
+  .div1-text p {
+    font-size: 1.5em;
+  }
+  .programs .div1 {
+    gap: 40px;
+  }
+  .sotries-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .com1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 20px;
+  }
+  .com2 {
+    margin-left: 20px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  /* faq */
+  .faq-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-grid .q1 {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 0; */
+  }
+
+  
+  /* footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-footer {
+    display: none;
+  }
+
+  /* programs-media */
+
+  .our-programs {
+    background-color: white;
+    /* min -height: 70vh; */
+  }
+  .our-programs-grid {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .body-buil .text {
+    display: none;
+  }
+  .body-buil img {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+  }
+  .our-programs h1{
+    font-size: 3em;
+  }
+  .body-buil img {
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+  }
+
+  /* plan media */
+
+  .plan-grid {
+    display: flex;
+    flex-direction: column;
+    
+    gap:10px;
+    
+   
+  }
+
+ 
+  .plan-grid .first-plan:hover{
+    
+  transition:none;
+  transform: none ;
+  }
+
+  /* signup */
+  .img img {
+    display: none;
+  }
+  .rejex form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+
+  } 
+  .sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+form input{
+  width: 100%;
+}
+form button{
+  width: 100%;
+}
+}
