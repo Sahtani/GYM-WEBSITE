@@ -72,8 +72,8 @@ header {
 
 #list {
   display: none;
-  width: 100px;
-  height: 20px;
+  width: 300px;
+  height: auto;
 }
 .home {
   display: flex;
@@ -116,7 +116,7 @@ header {
 
 .programs {
   background-color: white;
- max-height: 70vh;
+ min-height: 70vh;
 }
 .pograms-grid {
   display: grid;
@@ -157,7 +157,7 @@ header {
 .sotries-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
 }
 
 .title-stories {
@@ -503,7 +503,7 @@ span {
   display: flex;
   height: 90vh;
   align-items: center;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 .sign-up-container {
   display: flex;
@@ -565,6 +565,7 @@ input:focus {
   border-radius: 15px;
   margin-top: 30px;
   margin-left: 200px;
+  text-align: center;
 }
 .img img {
   border-radius: 40px;
@@ -601,10 +602,16 @@ input:focus {
     border-radius: 10px;
   }
 
+
   .navigation .nav-links a {
     color: black;
     font-size: 1em;
+    margin-bottom: 20px;
   }
+  .navigation .nav-links li{
+     margin-bottom: 10px;
+  }
+
   .navigation .nav-links button {
     width: 100%;
     margin-top: 20px;
@@ -617,17 +624,12 @@ input:focus {
   #list {
     display: block;
     cursor: pointer;
-  
   }
 
   /* index-media */
   .pograms-grid {
     display: flex;
     flex-direction: column;
-  }
-  .pograms-grid img {
-    width: 40px;
-    height: 40px;
   }
   .programs .div1 {
   gap:0px
@@ -636,10 +638,10 @@ input:focus {
     font-size: 2em;
   }
   .div1-text p {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .programs .div1 {
-    gap: 40px;
+    gap: 10px;
   }
   .sotries-grid {
     display: grid;
@@ -650,12 +652,27 @@ input:focus {
     grid-column: 1;
     grid-row: 1;
     margin-left: 20px;
+    margin-right: 20PX;
+
   }
   .com2 {
     margin-left: 20px;
     grid-column: 1;
     grid-row: 2;
+    margin-top: 20PX;
+    margin-right: 20PX;
   }
+  
+  .div1 {display: flex;
+    flex-direction: column;
+  }
+  .div1 p{
+    text-align: center;
+  }
+  .div1 h3{
+    text-align: center;
+  }
+
   /* faq */
   .faq-grid {
     display: flex;
@@ -666,9 +683,18 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 0; */
+   
   }
-
+  .q1{
+    padding: 1px 1px 1px 3px;
+    height: auto
+    
+  }
+  .img-check{
+    width: 38px;
+    padding-right: 10px;
+  }
+ 
   
   /* footer */
   footer {
@@ -683,7 +709,7 @@ input:focus {
 
   .our-programs {
     background-color: white;
-    /* min -height: 70vh; */
+
   }
   .our-programs-grid {
     display: flex;
@@ -713,15 +739,9 @@ input:focus {
   .plan-grid {
     display: flex;
     flex-direction: column;
-    
     gap:10px;
-    
-   
   }
-
- 
-  .plan-grid .first-plan:hover{
-    
+ .plan-grid .first-plan:hover{ 
   transition:none;
   transform: none ;
   }
@@ -750,3 +770,26 @@ form button{
   width: 100%;
 }
 }
+
+
+/* FOOTER */
+footer{
+  padding: 10px;
+}
+
+
+
+/* @media (max-width:1023px){
+
+.pograms-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.our-programs-grid{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: repeat(3,1fr);
+  
+}
+} */
