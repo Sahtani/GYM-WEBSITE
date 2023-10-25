@@ -57,7 +57,9 @@ header {
   font-family: var(--font--family);
 }
 .navigation .nav-links li a:hover {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 2px solid var(--back-color);
+  color: #ff5733;
+
 }
 
 .nav-links button {
@@ -123,7 +125,7 @@ header {
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.programs .title {
+.title {
   color: black;
   font-family: var(--font--family);
   font-size: 2em;
@@ -322,7 +324,7 @@ footer p {
 .container-footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 30px;
 }
 .icons {
@@ -512,7 +514,7 @@ span {
 }
 .sign-up {
   background-color: #aaaaaa;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .home-signup h1 {
   color: white;
@@ -572,6 +574,7 @@ input:focus {
   width: 80%;
   height: 80vh;
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 .rejex button {
   color: white;
@@ -584,12 +587,144 @@ input:focus {
   margin-left: 40px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************GALLERY********************************/
+#gallery {
+  background-image: url(imgs/game.jpg),linear-gradient(transparent,black);  
+  width: 100%;
+  height: 100VH;
+background-position:center;
+  background-size: cover;
+}
+.galerry-content{
+  min-height:80vh ;
+  background-color:white;
+}
+.title-galerry h2{
+  color: var(--back-color);
+  font-family: var(--font--family);
+  font-size: 3em;
+  text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.slide-image-container img{
+  width: 100%;
+  height: 50vh;
+
+  
+}
+.slide-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-dot{
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition:0.6s ease;
+  margin-top: 20px;
+}
+.dot.active  {
+  background-color: #333;
+}
+
+.active .dot:hover {
+  background-color:black;
+}
+
+
+
+/* tablette */
+ @media (max-width:1023px )and (min-width:769px) {
+body{
+  width: 100%;
+}
+
+
+
+
+.pograms-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.our-programs-grid{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: repeat(3,1fr);
+  
+}
+ #myform {
+  
+  padding-left: 150px;
+  padding-right:150px ;
+  
+} 
+.sign-up-container{
+  gap:40px
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   * {
     overflow-x: hidden;
   }
-
-  .nav-links.active {
+  .home{
+    padding-left: 30px;
+  }
+.nav-links.active {
     position: absolute;
     background-color: #aaa;
     display: block;
@@ -631,14 +766,14 @@ input:focus {
     display: flex;
     flex-direction: column;
   }
-  .programs .div1 {
-  gap:0px
-  }
+
   .div1-text h3 {
     font-size: 2em;
+    
   }
   .div1-text p {
     font-size: 2em;
+    padding-right: 15px
   }
   .programs .div1 {
     gap: 10px;
@@ -700,6 +835,7 @@ input:focus {
   footer {
     display: flex;
     flex-direction: column;
+   
   }
   .img-footer {
     display: none;
@@ -774,22 +910,18 @@ form button{
 
 /* FOOTER */
 footer{
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 
+/* galerry */
 
 
-/* @media (max-width:1023px){
 
-.pograms-grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 1fr 1fr 1fr;
+
+.slide-image-container img{
+  margin-left: 20PX;
+  margin-right: 20PX;
 }
-.our-programs-grid{
-  display: grid;
-  grid-template-columns: repeat(2,50%);
-  grid-template-rows: repeat(3,1fr);
-  
-}
-} */
+
