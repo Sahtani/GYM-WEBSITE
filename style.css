@@ -699,25 +699,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
   * {
     overflow-x: hidden;
@@ -742,7 +723,7 @@ body{
   .navigation .nav-links a {
     color: black;
     font-size: 1em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .navigation .nav-links li{
      margin-bottom: 10px;
@@ -751,6 +732,8 @@ body{
   .navigation .nav-links button {
     width: 100%;
     margin-top: 20px;
+    font-size: 1em;
+   
   }
   .logo {
     width: 1000px;
@@ -906,8 +889,6 @@ form input{
 form button{
   width: 100%;
 }
-}
-
 
 /* FOOTER */
 footer{
@@ -917,12 +898,15 @@ footer{
 }
 
 /* galerry */
-
-
-
-
-.slide-image-container img{
-  margin-left: 20PX;
-  margin-right: 20PX;
+.galerry-content{
+  height: 20vh;
 }
 
+.slide-image-container img{
+  margin-left: 40PX;
+  margin-right: 60PX;
+  width: 80%;
+  height: 20VH;
+}
+
+}
